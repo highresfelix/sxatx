@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Iceland');
+
+body {
+	background-color: black;
+	background-size: auto 100vh;
+	background-repeat: repeat-x;
+	background-position: 50% 0%;
+}
+
+@font-face {
+	font-family: KenneyFuture;
+	src: url(assets/KennyFuture.ttf);
+}
+
+@font-face {
+	font-family: CourierPrime;
+	src: url(assets/courier.ttf);
+}
+
+@media only screen and (max-width: 768px) {
+	/* For mobile */
+	img.left-alley {
+		display: none;
+	}
+
+	img.right-alley {
+		display: none;
+	}
+
+	div#glitch-header {
+		font-size: 150%;
+	}
+
+	div.main-page {
+		justify-content: space-around;
+	}
+}
+
+body, * {
+	margin: 0;
+}
+
+body, input {
+	font-size: 28px;
+	font-family: 'Iceland', cursive;
+	color: white;
+}
+
+.main-page {
+	/* background: radial-gradient(at 20%, #BFB6CE, #1B1C2A); */
+	/* background: black; */
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	min-height: 100vh;
+	text-align: center;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: space-between;
+}
+
+.main-page * {
+	-webkit-animation: hue-flicker 10s infinite;
+	animation: hue-flicker 10s infinite;
+}
+
+.main-page > .content {
+	align-self: center;
+}
+
+footer {
+	font-size: 70%;
+	text-align: center;
+	width: 100%;
+}
